@@ -1,0 +1,280 @@
+UTOPIA
+Cartridge Instructions
+(For 1 or 2 Players)
+
+If you've ever muttered, "I'd certainly do better if I ruled that 
+country," then this game is for you. UTOPIA puts you in charge of 
+your own island state. You control the treasury, agriculture, industry, 
+housing, education, hospitals and military. You allocate funds to 
+create revenue and improve life on your island. If your decisions are 
+wise and the people are happy, you rack up points. If not, rebels 
+begin to infiltrate your paradise. Chances are, you'll find that running 
+a country is every bit as complicated as it seems.
+
+OBJECT OF THE GAME
+
+1 Player: To score the most points possible in the number of rounds 
+selected (your term of office). Points reflect the overall well-being of 
+the people and are gained by earning and spending revenue to 
+improve living condition on the island you select.
+
+2 Player: To outscore your opponent by improving living conditions 
+on your island either by cooperating with your opponent or by 
+causing rebellion and loss of revenue on your opponent's island.
+
+1 or 2 Player Game: Both games are played by the same rules. In a 1-
+player game, choose one island to control and ignore the other.
+
+CHECK YOUR CONTROLS
+
+TO CONTROL THE LEFT ISLAND:
+
+Number keys:
+0 through 9: use number row (top of keyboard)
+Clear: DELETE key
+Enter: RETURN key
+
+Direction keys (move cursor/boats):
+Up: W key
+Left: A key
+Down: S key
+Right: D key
+
+Score keys:
+Display total score: space bar
+Display population (census): CONTROL key
+Display last single year (previous round) score: OPTION key
+
+TO CONTROL THE RIGHT ISLAND (REQUIRES EXTENDED KEYBOARD):
+
+Number keys:
+0 through 9: use numeric keypad (right of keyboard)
+Clear : CLEAR key (numeric keypad)
+Enter : ENTER key (numeric keypad)
+
+Direction keys (move cursor/boats):
+Up: up-arrow key
+Left: left-arrow key
+Down: down-arrow key
+Right: right-arrow key
+
+Score keys:
+Display total score: = key (numeric keypad)
+Display population (census): / key (numeric keypad)
+Display last single year (previous round) score: * key (numeric 
+keypad)
+
+WHEN YOU SEE THE GAME TITLE, PRESS ENTER
+
+1. Use number keys to select NUMBER OF ROUNDS (from 1 to 50). This 
+is your term of office. Then press ENTER.
+
+2. Use number keys to select length of each round (from 30 to 120 
+seconds). Then press ENTER.
+
+3. Before ENTER is pressed, the numbers keyed in can be erased by 
+pressing CLEAR.
+
+WHEN GAME STARTS, YOU WILL SEE TWO ISLANDS
+
+At the bottom of the screen are four numbers. Left to right, these 
+are:
+
+"Gold bars" in Player 1 Treasury
+
+Rounds left in game (including present round)
+
+Time left in present round
+
+"Gold bars" in Player 2 treasury
+
+You may also see:
+
+Rain clouds (white)
+Pirate ships (three masts)
+Tropical storms (dark clouds)
+Schools of fish (groups of dots in ocean)
+Hurricanes (white, spinning)
+
+The computer controls these elements, which come and go at random.
+
+GOVERNING YOUR ISLAND KINGDOM
+
+You win by accumulating POINTS, not money. Your gold bars are 
+meant to be spent. Each player starts the game with 100 gold bars.
+
+Select items to purchase using the numbers below:
+
+1. FORT (50 gold bars). Protection: Guards surrounding land area 
+against rebels. Guards nearby fishing boats against pirates and 
+opponent's PT boats.
+
+2. FACTORY (40 gold bars). Income: Earns at least 4 gold bars per 
+round. (More as well-being of people increases.) Pollution increases 
+death rate.
+
+3. ACRE OF CROPS (3 gold bars). Income/Points: Each acre feeds 
+approx. 500 people. When rained upon, yields added revenue 
+(approx. 1 gold bar per acre). Average life of an acre of crops is 3 
+rounds, but this number varies.
+
+4. SCHOOL (35 gold bars). Income/Points: Increases well-being of 
+people and productivity of factories.
+
+5. HOSPITAL (75 gold bars). Increases population and greatly 
+increases factory productivity.
+
+6. HOUSING PROJECT (60 gold bars). Points: Increases harmony on 
+island by housing 500 people.
+
+7. REBEL SOLDIERS (30 gold bars). Aggression: Cause opponent to lose 
+points or income.
+
+8. PT BOAT (40 gold bars). Protection/Aggression: Guards your 
+fishing boat against pirates. Sinks opponent's fishing boat.
+
+9. FISHING BOAT (25 gold bars). Income/Points: Automatically feeds 
+500 people and earns 1 gold bar per round. If moved over a school of 
+fish, earns 1 gold bar for every second remaining over fish. Can be 
+sunk by pirates, PT boats or hurricanes.
+
+Use the DIRECTION KEYS to position your cursor over the area of your 
+island where you want to build or plant crops. DO NOT use the cursor 
+to place rebels on your opponent's island or to buy a boat. Rebels are 
+placed randomly by the computer and boats automatically appear in 
+your island harbor when purchased.
+
+Check your treasury to make sure you have enough gold bars to buy 
+the item you want. Press the number of the item, then ENTER.
+
+The item symbol will appear on your island where the cursor was 
+positioned. The cost will be deducted from your treasury.
+
+You may purchase items at any time during any round, as long as 
+you have sufficient funds. (If you try to buy with insufficient funds, 
+you get nothing but a RAZZ.)
+
+At the end of a round, all action freezes for a few seconds. You hear a 
+"time's up" signal. Your treasury display changes to show your score 
+for the last round (points gained), then your total score so far. When 
+the game resumes, action picks up where it left off. Your treasury 
+display returns, with any earning from the last round added.
+
+KEEP TRACK OF YOUR SCORE AND POPULATION
+
+Check score or population any time during a round using the scoring 
+keys (see CHECK YOUR CONTROLS, above).
+
+You automatically earn 10 GOLD BARS per round, even if you do 
+nothing during that round.
+
+Be aware of your census count, so that you can provide adequate 
+food, housing, schools and hospitals for the people. Remember:
+
+1 housing project per 500 people.
+1 fishing boat OR 1 acre of crops per 500 people.
+Hospitals and schools are up to you.
+
+KEEP AN EVE ON THE WEATHER
+
+You can't control it, but you can try to anticipate it.
+
+RAIN STORMS help your crops grow. Try to plant where the rain 
+most frequently falls. There are no set paths for rain, but you will 
+notice general patterns.
+
+TROPICAL STORMS bring a deluge. They may either help your crops 
+or destroy them. On rare occasions, they may destroy a building or 
+boat.
+
+HURRICANES usually lay waste to everything in their paths. Fishing 
+boats will be sunk if moving, but have a chance of surviving if 
+anchored. Everything else over which the hurricane passes has a 2/3 
+chance of being leveled. As in real life, the faster a hurricane moves, 
+the less damage it inflicts.
+
+BE ON GUARD AGAINST REBELS
+
+If the people are not satisfied, rebels may spring up on your island. 
+Your opponent can also pay to establish rebels on your island. (And 
+you can do the same to your opponent.) Rebels appear at random 
+points, destroying anything on which they land. Peace can be 
+restored only by increasing the people's well-being. A rebel faction 
+will then disappear, usually within one round.
+
+A FORT protects everything within a one-cursor radius around itself 
+(including boats, if the fort is on the shoreline).
+
+KEEP YOUR SHIPS SAILING
+
+TO CONTROL your fishing boat or PT boat, move the cursor over the 
+boat, then press 0 (zero). The cursor will disappear and you will be 
+able to use the DIRECTION KEYS to move your boat.
+
+If you have a boat docked in your harbor, you must move it before 
+you can buy another boat.
+
+Watch out for invisible SAND BARS near the shore lines. They can 
+slow you down when you are trying to move quickly. Avoid sand 
+bars by moving parallel to shore whenever possible.
+
+TO REGAIN CONTROL OF THE CURSOR, press 0 (zero). The cursor will 
+reappear and you can move it, using the DIRECTION KEYS. The boat 
+will be anchored at its current position (except in the bottom inch of 
+the screen where the score is displayed).
+
+Once a boat is anchored, it will not move. A FISHING BOAT can still 
+fish (if it is over a school of fish)...or be sunk, so best not to leave it in 
+open water. A PT BOAT cannot attack when anchored...but it can be 
+sunk.
+
+PIRATES AND PT BOATS
+
+* A PT boat can sink opponent's fishing boat by occupying the same 
+space.
+* PT boats cannot sink pirate ships or other PT boats.
+* PT boats can stop pirate ships by moving in front of them. Use a PT 
+boat to protect a fishing boat in harbor.
+* PT boats can ONLY be sunk by hurricanes or tropical storms (rare).
+* PT boats cannot fish.
+* You cannot control BOTH PT boat and fishing boat at the same time.
+* Pirates can ONLY be sunk by hurricanes or tropical storms (rare).
+* Pirates can sink fishing boats by occupying the same space.
+
+HOW TO WIN THE GOVERNOR'S AWARD
+
+1. Start with a greater number of shorter rounds (30 - 45 seconds), 
+since earnings and points are added each round.
+
+2. Buy a fishing boat in the first round, and hang on to it. It's the only 
+income source that you can really control.
+
+3. Get housing established early in the game, then go for a factory. 
+Remember that factories cause a slow-down in population.
+
+4. Hospitals dramatically increase productivity, but they also boost 
+population. Since the point value of each individual improvement 
+DECREASES as population increase, save hospital construction for late 
+in the game.
+
+5. Do your planting early in the round. Crops planted late may 
+disappear as soon as the round ends.
+
+6. Don't overplant. Crops are an unreliable source of income, since 
+they depend on rain. They also require replanting.
+
+7. Don't drop anchor for long in the upper left section of screen. All 
+hurricanes originate here.
+
+8. Prepare for the possibility of aggression. Build your town in a 
+circle with a space left in the center for a fort, so it can protect the 
+entire town if necessary.
+
+9. Don't be afraid to take aggressive action yourself, if your score 
+falls behind your opponent's. But build your fort first.
+
+10. As a cooperative tactic, BOTH players can invest in PT boats early 
+in the game, then position the PT boats where they will block the 
+arrival of pirates. Pirates usually appear first in the corners.
+-----------------
+(c) 1981, 1997 Intellivision Productions, Inc.

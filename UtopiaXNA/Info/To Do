@@ -1,0 +1,37 @@
+THINGS LEFT TO DO:
+------------------
+
+* Prioritized *
+
+> Create Selection Menu
+	- TERM OF OFFICE (Rounds)
+	- TURN OF LENGTH (Seconds per round)
+	- SINGLEPLAYER
+	- MULTIPLAYER
+	
+> OPTIONS MENU
+	- Working SFX slider
+	- Working MUS slider
+	- Music switch on/off
+	
+> THE GAME
+	- Left island
+		- Cursor
+		- Building Placement
+	- Right island
+		- Cursor
+		- Building Placement
+	
+	- Environment
+		- Fish AI
+		- Pirates AI
+		- Weather AI
+		- Hurricane AI
+		- Rebel AI
+		
+	- Scoring
+		- ???
+		
+	- Opponent AI
+		- ???
+		

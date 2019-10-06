@@ -1,0 +1,9 @@
+> git add *
+> git status
+> git commit -m "COMMENTS" *
+> git push -u origin master
+
+> Successful Upload
+
+// If that doesn't work or some other bull shit happens
+// Just clone the directory and upload the changes

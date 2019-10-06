@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC08FDF3-DE74-490A-8FEB-8C87CAF8A32A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UtopiaXNA</RootNamespace>
+    <AssemblyName>UtopiaXNA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LINUX</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;LINUX</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Source\Audio\ButtonSound.cs" />
+    <Compile Include="Source\Menu\How To Play\Governor%27s Award.cs" />
+    <Compile Include="Source\Menu\How To Play\HowToBoats.cs" />
+    <Compile Include="Source\Menu\How To Play\HowToBuilding.cs" />
+    <Compile Include="Source\Menu\How To Play\HowToEnvironment.cs" />
+    <Compile Include="Source\System\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Audio\Music.cs" />
+    <Compile Include="Source\Game\EndGame.cs" />
+    <Compile Include="Source\Game\Multiplayer.cs" />
+    <Compile Include="Source\Game\Singleplayer.cs" />
+    <Compile Include="Source\Menu\About.cs" />
+    <Compile Include="Source\Menu\HowToPlay.cs" />
+    <Compile Include="Source\Menu\Options.cs" />
+    <Compile Include="Source\Menu\Selection.cs" />
+    <Compile Include="Source\Menu\Start.cs" />
+    <Compile Include="Source\System\Main.cs" />
+    <Compile Include="Source\System\Sprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Content\Fonts\04B_03.TTF" />
+    <None Include="Content\Fonts\font.spritefont" />
+    <None Include="Info\To Do" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Art\Background\aboutimg.png" />
+    <Content Include="Content\Art\Background\gold.png" />
+    <Content Include="Content\Art\Background\hashtag.png" />
+    <Content Include="Content\Art\Background\howtoplayimg.png" />
+    <Content Include="Content\Art\Background\HowToPlay\boatsimg.png" />
+    <Content Include="Content\Art\Background\HowToPlay\buildingimg.png" />
+    <Content Include="Content\Art\Background\HowToPlay\environmentimg.png" />
+    <Content Include="Content\Art\Background\HowToPlay\governorimg.png" />
+    <Content Include="Content\Art\Background\optionsimg.png" />
+    <Content Include="Content\Art\Background\Scroll.png" />
+    <Content Include="Content\Art\Background\selectionimg.png" />
+    <Content Include="Content\Art\Background\titleimg.png" />
+    <Content Include="Content\Art\Background\titlelogo.png" />
+    <Content Include="Content\Art\Boats\boatGreenLeft.png" />
+    <Content Include="Content\Art\Boats\boatGreenRight.png" />
+    <Content Include="Content\Art\Boats\boatRedLeft.png" />
+    <Content Include="Content\Art\Boats\boatRedRight.png" />
+    <Content Include="Content\Art\Boats\pirateBoatLeft.png" />
+    <Content Include="Content\Art\Boats\pirateBoatRight.png" />
+    <Content Include="Content\Art\Boats\pirateLeft.png" />
+    <Content Include="Content\Art\Boats\pirateRight.png" />
+    <Content Include="Content\Art\Boats\PTboatGreen.png" />
+    <Content Include="Content\Art\Boats\PTboatRed.png" />
+    <Content Include="Content\Art\Buildings\factory.png" />
+    <Content Include="Content\Art\Buildings\fort.png" />
+    <Content Include="Content\Art\Buildings\grass.png" />
+    <Content Include="Content\Art\Buildings\hospital.png" />
+    <Content Include="Content\Art\Buildings\house.png" />
+    <Content Include="Content\Art\Buildings\rebel.png" />
+    <Content Include="Content\Art\Buildings\school.png" />
+    <Content Include="Content\Art\Buttons\Menu\aboutButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\aboutButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\backButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\backButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\exitButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\exitButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\governorsAwardHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\governorsAwardIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToBoatsHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToBoatsIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToBuildingHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToBuildingIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToEnvironmentHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\How To Play\howToEnvironmentIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\howToPlayButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\howToPlayButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\optionsButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\optionsButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Menu\playButtonHover.png" />
+    <Content Include="Content\Art\Buttons\Menu\playButtonIdle.png" />
+    <Content Include="Content\Art\Buttons\Volume\musMinusHover.png" />
+    <Content Include="Content\Art\Buttons\Volume\musMinusIdle.png" />
+    <Content Include="Content\Art\Buttons\Volume\musPlusHover.png" />
+    <Content Include="Content\Art\Buttons\Volume\musPlusIdle.png" />
+    <Content Include="Content\Art\Buttons\Volume\sfxMinusHover.png" />
+    <Content Include="Content\Art\Buttons\Volume\sfxMinusIdle.png" />
+    <Content Include="Content\Art\Buttons\Volume\sfxPlusHover.png" />
+    <Content Include="Content\Art\Buttons\Volume\sfxPlusIdle.png" />
+    <Content Include="Content\Art\Cursors\mainUI.png" />
+    <Content Include="Content\Art\Cursors\menuCursor.png" />
+    <Content Include="Content\Art\Cursors\player1Cursor.png" />
+    <Content Include="Content\Art\Cursors\player2Cursor.png" />
+    <Content Include="Content\Art\Environment\fish-Sheet.png" />
+    <Content Include="Content\Art\Environment\hurricane-Sheet.png" />
+    <Content Include="Content\Art\Environment\rain-Sheet.png" />
+    <Content Include="Content\Art\Environment\storm-Sheet.png" />
+    <Content Include="Content\Art\Environment\water.png" />
+    <Content Include="Content\Art\Island\player1Island.png" />
+    <Content Include="Content\Art\Island\player2Island.png" />
+    <Content Include="Content\Audio\Music\menumusic.mp3" />
+    <Content Include="Content\Audio\SFX\BUTTON_SOUND.wav" />
+    <Content Include="Content\Audio\SFX\FISH_1.wav" />
+    <Content Include="Content\Audio\SFX\FISH_2.wav" />
+    <Content Include="Content\Audio\SFX\HURRICANE_DESTROY.wav" />
+    <Content Include="Content\Audio\SFX\RAIN_CROPS.wav" />
+    <Content Include="Content\Audio\SFX\ROUND_END.wav" />
+    <Content Include="Content\Audio\SFX\STORM_DESTROY.wav" />
+    <Content Include="Info\Git Instructions.txt" />
+    <Content Include="Info\Reference Image.png" />
+    <Content Include="Info\Utopia.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
