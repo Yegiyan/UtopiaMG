@@ -8,4 +8,4 @@ Utopia is a 1981 strategy video game by Don Daglow released for the Intellivisio
 
 > Monogame Framework: http://www.monogame.net/
 
-[![](https://i.imgur.com/pHO3ITm.jpg)
+![](https://i.imgur.com/pHO3ITm.jpg)
