@@ -65,7 +65,7 @@ namespace UtopiaMG
 
         protected override void LoadContent()
 		{
-			menuMusic.Play(Content);
+			//menuMusic.Play(Content);
 			batch = new SpriteBatch(GraphicsDevice);
 
             startMenu.Load(GraphicsDevice, batch, Content);
