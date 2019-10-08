@@ -11,13 +11,17 @@ namespace UtopiaMG
 		ContentManager Content;
 		GraphicsDevice device;
 		SpriteBatch batch;
+        SpriteFont font;
 
-		Texture2D selectionimg;
+        Texture2D selectionimg;
 		SoundEffect buttonSound;
 
 		Sprite backButton;
 		Texture2D backTexture;
 		Vector2 backPosition;
+
+        public float termOfOffice = 10; // Amount of rounds
+        public float termLength = 60;   // Round length in seconds
 
 		public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
 		{
@@ -25,7 +29,9 @@ namespace UtopiaMG
     		this.batch = batch;
     		this.Content = Content;
 
-			selectionimg = Content.Load<Texture2D>("Art/Background/selectionimg");
+            font = Content.Load<SpriteFont>("Fonts/font");
+
+            selectionimg = Content.Load<Texture2D>("Art/Background/selectionimg");
 			buttonSound = Content.Load<SoundEffect>("Audio/SFX/BUTTON_SOUND");
 
 			backTexture = Content.Load<Texture2D>("Art/Buttons/Menu/backButtonIdle");

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using System;
@@ -7,11 +8,11 @@ namespace UtopiaMG
 {
 	class EndGame
 	{
-		public Microsoft.Xna.Framework.Content.ContentManager Content;
+		public ContentManager Content;
 		public GraphicsDevice device;
 		public SpriteBatch batch;
 
-		public void Load(GraphicsDevice device, SpriteBatch batch, Microsoft.Xna.Framework.Content.ContentManager Content)
+		public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
 		{
 			this.device = device;
     		this.batch = batch;

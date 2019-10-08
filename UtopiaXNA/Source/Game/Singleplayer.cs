@@ -15,6 +15,8 @@ namespace UtopiaMG
         public SpriteBatch batch;
         SpriteFont font;
 
+        Selection selectionMenu;
+
         // ------------- UI OBJECTS ------------- \\
         Sprite mainUI;
         Texture2D mainUITexture;
@@ -49,6 +51,8 @@ namespace UtopiaMG
             this.batch = batch;
             this.Content = Content;
 
+            selectionMenu = new Selection();
+
             font = Content.Load<SpriteFont>("Fonts/font");
 
             mainUITexture = Content.Load<Texture2D>("Art/Cursors/mainUI");
@@ -74,6 +78,9 @@ namespace UtopiaMG
             water = new Sprite(waterTexture, waterPosition);
             player1Island = new Sprite(player1IslandTexture, player1IslandPosition);
             player2Island = new Sprite(player2IslandTexture, player2IslandPosition);
+
+            selectionMenu.termLength -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (selectionMenu.termLength == 0) selectionMenu.termOfOffice -= 1; // not working
         }
 
         public void Draw(GameTime gameTime)
@@ -87,6 +94,9 @@ namespace UtopiaMG
             player2Island.Draw(batch, gameTime);
 
             mainUI.Draw(batch, gameTime);
+
+            batch.DrawString(font, "TURN LENGTH: " + selectionMenu.termLength.ToString("0"), new Vector2(655, 15), Color.White);
+            batch.DrawString(font, "TERM OF OFFICE: " + selectionMenu.termOfOffice.ToString("0"), new Vector2(35, 15), Color.White);
 
             batch.DrawString(font, "" + player1Gold, new Vector2(375, 470), Color.White);
             batch.DrawString(font, "" + player1Census, new Vector2(375, 505), Color.White);

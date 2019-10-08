@@ -106,7 +106,7 @@ namespace UtopiaMG
 					//endGame.Update(gameTime);
 					break;
 				default:
-					Console.WriteLine("Update() state is null!");
+                    Debug.WriteLine("Update() state is null!");
 					break;
 			}
 			base.Update(gameTime);
@@ -118,9 +118,9 @@ namespace UtopiaMG
             float frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
             MouseState mouseState = Mouse.GetState();
 
-            Console.WriteLine("Mouse Position: ({0}, {1})", mouseState.X, mouseState.Y);
-            Console.WriteLine("Game State: {0}", state);
-            Console.WriteLine("FPS: " + (int)frameRate);
+            Debug.WriteLine("Mouse Position: ({0}, {1})", mouseState.X, mouseState.Y);
+            Debug.WriteLine("Game State: {0}", state);
+            Debug.WriteLine("FPS: " + (int)frameRate);
 
             switch (state)
 			{
@@ -149,7 +149,7 @@ namespace UtopiaMG
 					endGame.Draw(gameTime);
 					break;
 				default:
-                    Console.WriteLine("Draw() state is null!");
+                    Debug.WriteLine("Draw() state is null!");
 					break;
 			}
             base.Draw(gameTime);
