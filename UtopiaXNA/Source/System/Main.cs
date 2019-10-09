@@ -118,9 +118,9 @@ namespace UtopiaMG
             float frameRate = 1 / (float)gameTime.ElapsedGameTime.TotalSeconds;
             MouseState mouseState = Mouse.GetState();
 
-            Debug.WriteLine("Mouse Position: ({0}, {1})", mouseState.X, mouseState.Y);
-            Debug.WriteLine("Game State: {0}", state);
-            Debug.WriteLine("FPS: " + (int)frameRate);
+            //Debug.WriteLine("Mouse Position: ({0}, {1})", mouseState.X, mouseState.Y);
+            //Debug.WriteLine("Game State: {0}", state);
+            //Debug.WriteLine("FPS: " + (int)frameRate);
 
             switch (state)
 			{

@@ -20,8 +20,8 @@ namespace UtopiaMG
 		Texture2D backTexture;
 		Vector2 backPosition;
 
-        public float termOfOffice = 10; // Amount of rounds
-        public float termLength = 60;   // Round length in seconds
+        public float termOfOffice = 5; // Amount of rounds
+        public float termLength = 10;   // Round length in seconds
 
 		public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
 		{

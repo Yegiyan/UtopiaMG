@@ -13,6 +13,8 @@ namespace UtopiaMG
         public ContentManager Content;
         public GraphicsDevice device;
         public SpriteBatch batch;
+
+        SoundEffect roundEndDing;
         SpriteFont font;
 
         Selection selectionMenu;
@@ -36,11 +38,14 @@ namespace UtopiaMG
         // -------------------------------------- \\
 
         // ------------ PLAYER STATS ------------ \\
-        int player1Gold = 50;
+        float termOfOffice = 0;
+        float termLength = 0;
+
+        int player1Gold = 100;
         int player1Census = 0;
         int player1Score = 0;
 
-        int player2Gold = 50;
+        int player2Gold = 100;
         int player2Census = 0;
         int player2Score = 0;
         // -------------------------------------- \\
@@ -52,8 +57,9 @@ namespace UtopiaMG
             this.Content = Content;
 
             selectionMenu = new Selection();
-
             font = Content.Load<SpriteFont>("Fonts/font");
+
+            roundEndDing = Content.Load<SoundEffect>("Audio/SFX/ROUND_END");
 
             mainUITexture = Content.Load<Texture2D>("Art/Cursors/mainUI");
             mainUIPosition = new Vector2(0, 0); // 1024x576
@@ -70,6 +76,9 @@ namespace UtopiaMG
             player2IslandTexture = Content.Load<Texture2D>("Art/Island/player2Island");
             player2IslandPosition = new Vector2(550, 100); // 371x271
             player2Island = new Sprite(player2IslandTexture, player2IslandPosition);
+
+            termLength = selectionMenu.termLength;
+            termOfOffice = selectionMenu.termOfOffice;
         }
 
         public void Update(GameTime gameTime)
@@ -79,8 +88,18 @@ namespace UtopiaMG
             player1Island = new Sprite(player1IslandTexture, player1IslandPosition);
             player2Island = new Sprite(player2IslandTexture, player2IslandPosition);
 
-            selectionMenu.termLength -= (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (selectionMenu.termLength == 0) selectionMenu.termOfOffice -= 1; // not working
+            termLength -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (termLength <= 0)
+            {
+                roundEndDing.Play();
+                termOfOffice--;
+                termLength = selectionMenu.termLength;
+            }
+            if (termOfOffice < 1)
+            {
+                Main.state = GameState.STARTMENU; // CHANGE STATE TO ENDGAME WHEN WE'RE DONE
+                return;
+            }
         }
 
         public void Draw(GameTime gameTime)
@@ -95,8 +114,8 @@ namespace UtopiaMG
 
             mainUI.Draw(batch, gameTime);
 
-            batch.DrawString(font, "TURN LENGTH: " + selectionMenu.termLength.ToString("0"), new Vector2(655, 15), Color.White);
-            batch.DrawString(font, "TERM OF OFFICE: " + selectionMenu.termOfOffice.ToString("0"), new Vector2(35, 15), Color.White);
+            batch.DrawString(font, "TURN LENGTH: " + termLength.ToString("0"), new Vector2(660, 15), Color.White);
+            batch.DrawString(font, "TERM OF OFFICE: " + termOfOffice.ToString("0"), new Vector2(35, 15), Color.White);
 
             batch.DrawString(font, "" + player1Gold, new Vector2(375, 470), Color.White);
             batch.DrawString(font, "" + player1Census, new Vector2(375, 505), Color.White);
