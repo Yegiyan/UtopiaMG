@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using System.Diagnostics;
 using System;
+using System.Threading;
 
 namespace UtopiaMG
 {
@@ -97,6 +98,8 @@ namespace UtopiaMG
             }
             if (termOfOffice < 1)
             {
+                roundEndDing.Play();
+                Thread.Sleep(6000);
                 Main.state = GameState.STARTMENU; // CHANGE STATE TO ENDGAME WHEN WE'RE DONE
                 return;
             }
