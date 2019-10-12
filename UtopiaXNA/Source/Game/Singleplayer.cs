@@ -49,6 +49,8 @@ namespace UtopiaMG
         int player2Gold = 100;
         int player2Census = 0;
         int player2Score = 0;
+
+        bool isStart = false;
         // -------------------------------------- \\
 
         public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
@@ -77,13 +79,19 @@ namespace UtopiaMG
             player2IslandTexture = Content.Load<Texture2D>("Art/Island/player2Island");
             player2IslandPosition = new Vector2(550, 100); // 371x271
             player2Island = new Sprite(player2IslandTexture, player2IslandPosition);
-
-            termLength = selectionMenu.termLength;
-            termOfOffice = selectionMenu.termOfOffice;
         }
 
         public void Update(GameTime gameTime)
         {
+            if (!isStart)
+            {
+                Console.WriteLine("GET TERMOFOFFICE: (S) " + selectionMenu.getTermOfOffice());
+                Console.WriteLine("GET TERMLENGTH: (S) " + selectionMenu.getTermLength());
+                termOfOffice = selectionMenu.getTermOfOffice();
+                termLength = selectionMenu.getTermLength();
+                isStart = true;
+            }
+
             mainUI = new Sprite(mainUITexture, mainUIPosition);
             water = new Sprite(waterTexture, waterPosition);
             player1Island = new Sprite(player1IslandTexture, player1IslandPosition);

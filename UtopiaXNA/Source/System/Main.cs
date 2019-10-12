@@ -47,6 +47,7 @@ namespace UtopiaMG
 		// ------ Root Objects ------ \\
 		GraphicsDeviceManager graphics;
 		SpriteBatch batch;
+        bool isSingleplayer = false;
 		// -------------------------- \\
 
 		public Main()
@@ -78,8 +79,8 @@ namespace UtopiaMG
         }
 
 		protected override void Update(GameTime gameTime)
-		{
-			switch (state)
+		{       
+            switch (state)
 			{
 				case GameState.STARTMENU:
 					startMenu.Update(gameTime);

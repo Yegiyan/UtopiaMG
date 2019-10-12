@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
+using System;
 
 namespace UtopiaMG
 {
@@ -43,7 +44,27 @@ namespace UtopiaMG
         public float termOfOffice = 30; // Amount of rounds
         public float termLength = 60;   // Round length in seconds
 
-		public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
+        public void setTermOfOffice(float termOfOffice)
+        {
+            this.termOfOffice = termOfOffice;
+        }
+
+        public void setTermLength(float termLength)
+        {
+            this.termLength = termLength;
+        }
+
+        public float getTermOfOffice()
+        {
+            return termOfOffice;
+        }
+
+        public float getTermLength()
+        {
+            return termLength;
+        }
+
+        public void Load(GraphicsDevice device, SpriteBatch batch, ContentManager Content)
 		{
 			this.device = device;
     		this.batch = batch;
@@ -77,6 +98,12 @@ namespace UtopiaMG
 
 		public void Update(GameTime gameTime)
 		{
+            Console.WriteLine("GET TERMOFOFFICE: " + getTermOfOffice());
+            Console.WriteLine("GET TERMLENGTH: " + getTermLength());
+            
+            //Console.WriteLine("TERM OF OFFICE: {0}", termOfOffice);
+            //Console.WriteLine("TERM LENGTH: {0}", termLength);
+
             KeyboardState keyboard = Keyboard.GetState();
             oldMouseState = mouseState;
             mouseState = Mouse.GetState();
@@ -86,7 +113,9 @@ namespace UtopiaMG
 
             // --- ENTER BUTTON --- \\
             if (keyboard.IsKeyDown(Keys.Enter))
+            {
                 Main.state = GameState.SINGLEPLAYER;
+            }
             // -------------------- \\
 
             // -------------------------- ** TERM OF OFFICE PLUS ** --------------------------- \\
@@ -182,7 +211,10 @@ namespace UtopiaMG
 				backTexture = Content.Load<Texture2D>("Art/Buttons/Menu/backButtonIdle");
 				backButton = new Sprite(backTexture, backPosition);
 			}
-			// ----------------------------------------------------------------------- \\ 
+            // ----------------------------------------------------------------------- \\ 
+
+            setTermOfOffice(termOfOffice);
+            setTermLength(termLength);
 		}
 
 		public void Draw(GameTime gameTime)
