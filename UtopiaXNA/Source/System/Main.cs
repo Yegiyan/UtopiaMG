@@ -47,7 +47,6 @@ namespace UtopiaMG
 		// ------ Root Objects ------ \\
 		GraphicsDeviceManager graphics;
 		SpriteBatch batch;
-        bool isSingleplayer = false;
 		// -------------------------- \\
 
 		public Main()
@@ -112,7 +111,7 @@ namespace UtopiaMG
 			}
 			base.Update(gameTime);
 		}
-
+        
 		protected override void Draw(GameTime gameTime)
         {
             TargetElapsedTime = TimeSpan.FromSeconds(1d / 30d);

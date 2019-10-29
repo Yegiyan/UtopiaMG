@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Source\Audio\ButtonSound.cs" />
+    <Compile Include="Source\Game\Player.cs" />
     <Compile Include="Source\Menu\How To Play\Governor%27s Award.cs" />
     <Compile Include="Source\Menu\How To Play\HowToBoats.cs" />
     <Compile Include="Source\Menu\How To Play\HowToBuilding.cs" />
@@ -205,6 +206,7 @@
     <Content Include="Content\Audio\SFX\ROUND_END.wav" />
     <Content Include="Content\Audio\SFX\STORM_DESTROY.wav" />
     <Content Include="Info\Git Instructions.txt" />
+    <Content Include="Info\menuUI.png" />
     <Content Include="Info\Reference Image.png" />
     <Content Include="Info\Utopia.txt" />
   </ItemGroup>
