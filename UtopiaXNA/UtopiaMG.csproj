@@ -46,6 +46,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Source\Audio\ButtonSound.cs" />
+    <Compile Include="Source\Game\Building.cs" />
+    <Compile Include="Source\Game\Environment.cs" />
     <Compile Include="Source\Game\Player.cs" />
     <Compile Include="Source\Menu\How To Play\Governor%27s Award.cs" />
     <Compile Include="Source\Menu\How To Play\HowToBoats.cs" />

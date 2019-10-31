@@ -11,6 +11,8 @@ namespace UtopiaMG
         public Texture2D texture { get; set; }
         public Vector2 position { get; set; }
 
+
+
         public Player(Texture2D texture, Vector2 position)
         {
             this.texture = texture;
