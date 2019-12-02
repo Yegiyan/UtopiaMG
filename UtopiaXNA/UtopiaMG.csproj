@@ -53,6 +53,7 @@
     <Compile Include="Source\Menu\How To Play\HowToBoats.cs" />
     <Compile Include="Source\Menu\How To Play\HowToBuilding.cs" />
     <Compile Include="Source\Menu\How To Play\HowToEnvironment.cs" />
+    <Compile Include="Source\System\Keyboard.cs" />
     <Compile Include="Source\System\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\Audio\Music.cs" />

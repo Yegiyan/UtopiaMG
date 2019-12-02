@@ -121,7 +121,8 @@ namespace UtopiaMG
 
         public void Update(GameTime gameTime)
         {
-            KeyboardState keyboard = Keyboard.GetState();
+            //KeyboardState keyboard = Keyboard.GetState();
+            Keyboard.GetState();
 
             if (!isStart)
             {
@@ -148,102 +149,102 @@ namespace UtopiaMG
             }
 
             // Player 1 Controls
-            if (keyboard.IsKeyDown(Keys.W))
+            if (Keyboard.IsPressed(Keys.W))
                 player1Position.Y -= 4;
-            if (keyboard.IsKeyDown(Keys.A))
+            if (Keyboard.IsPressed(Keys.A))
                 player1Position.X -= 4;
-            if (keyboard.IsKeyDown(Keys.S))
+            if (Keyboard.IsPressed(Keys.S))
                 player1Position.Y += 4;
-            if (keyboard.IsKeyDown(Keys.D))
+            if (Keyboard.IsPressed(Keys.D))
                 player1Position.X += 4;
 
-            if (keyboard.IsKeyDown(Keys.D1) && player1Gold >= 3) // Grass
+            if (Keyboard.HasBeenPressed(Keys.D1) && player1Gold >= 3) // Grass
             {
                 buildings.Add(new Building(grassTexture, player1Position, 0));
                 player1Gold -= 3;
             }
-            if (keyboard.IsKeyDown(Keys.D2) && player1Gold >= 30) // Rebel
+            if (Keyboard.HasBeenPressed(Keys.D2) && player1Gold >= 30) // Rebel
             {
                 buildings.Add(new Building(rebelTexture, player1Position, 0));
                 player1Gold -= 30;
             }
-            if (keyboard.IsKeyDown(Keys.D3) && player1Gold >= 35) // School
+            if (Keyboard.HasBeenPressed(Keys.D3) && player1Gold >= 35) // School
             {
                 buildings.Add(new Building(schoolTexture, player1Position, 0));
                 player1Gold -= 35;
             }
-            if (keyboard.IsKeyDown(Keys.D4) && player1Gold >= 40) // Factory
+            if (Keyboard.HasBeenPressed(Keys.D4) && player1Gold >= 40) // Factory
             {
                 buildings.Add(new Building(factoryTexture, player1Position, 0));
                 player1Gold -= 40;
             }
-            if (keyboard.IsKeyDown(Keys.D5) && player1Gold >= 50) // Fort
+            if (Keyboard.HasBeenPressed(Keys.D5) && player1Gold >= 50) // Fort
             {
                 buildings.Add(new Building(fortTexture, player1Position, 0));
                 player1Gold -= 50;
             }
-            if (keyboard.IsKeyDown(Keys.D6) && player1Gold >= 60) // House
+            if (Keyboard.HasBeenPressed(Keys.D6) && player1Gold >= 60) // House
             {
                 buildings.Add(new Building(houseTexture, player1Position, 0));
                 player1Gold -= 60;
             }
-            if (keyboard.IsKeyDown(Keys.D7) && player1Gold >= 75) // Hospital
+            if (Keyboard.HasBeenPressed(Keys.D7) && player1Gold >= 75) // Hospital
             {
                 buildings.Add(new Building(hospitalTexture, player1Position, 0));
                 player1Gold -= 75;
             }
-            if (keyboard.IsKeyDown(Keys.D8))
+            if (Keyboard.HasBeenPressed(Keys.D8))
             {
                 // place player1 fishingboat
             }
-            if (keyboard.IsKeyDown(Keys.D9))
+            if (Keyboard.HasBeenPressed(Keys.D9))
             {
                 // place player1 ptboat
             }
 
             // Player 2 Controls
-            if (keyboard.IsKeyDown(Keys.Up))
+            if (Keyboard.IsPressed(Keys.Up))
                 player2Position.Y -= 4;
-            if (keyboard.IsKeyDown(Keys.Left))
+            if (Keyboard.IsPressed(Keys.Left))
                 player2Position.X -= 4;
-            if (keyboard.IsKeyDown(Keys.Down))
+            if (Keyboard.IsPressed(Keys.Down))
                 player2Position.Y += 4;
-            if (keyboard.IsKeyDown(Keys.Right))
+            if (Keyboard.IsPressed(Keys.Right))
                 player2Position.X += 4;
 
-            if (keyboard.IsKeyDown(Keys.NumPad1) && player2Gold >= 3) // Grass
+            if (Keyboard.HasBeenPressed(Keys.NumPad1) && player2Gold >= 3) // Grass
             {
                 // place player2 grass
             }
-            if (keyboard.IsKeyDown(Keys.NumPad2) && player2Gold >= 30) // Rebel
+            if (Keyboard.HasBeenPressed(Keys.NumPad2) && player2Gold >= 30) // Rebel
             {
                 // place player2 rebel
             }
-            if (keyboard.IsKeyDown(Keys.NumPad3) && player2Gold >= 35) // School
+            if (Keyboard.HasBeenPressed(Keys.NumPad3) && player2Gold >= 35) // School
             {
                 // place player2 school
             }
-            if (keyboard.IsKeyDown(Keys.NumPad4) && player2Gold >= 40) // Factory
+            if (Keyboard.HasBeenPressed(Keys.NumPad4) && player2Gold >= 40) // Factory
             {
                 // place player2 factory
             }
-            if (keyboard.IsKeyDown(Keys.NumPad5) && player2Gold >= 50) // Fort
+            if (Keyboard.HasBeenPressed(Keys.NumPad5) && player2Gold >= 50) // Fort
             {
                 // place player2 fort
             }
-            if (keyboard.IsKeyDown(Keys.NumPad6) && player2Gold >= 60) // School
+            if (Keyboard.HasBeenPressed(Keys.NumPad6) && player2Gold >= 60) // School
             {
                 // place player2 school
             }
-            if (keyboard.IsKeyDown(Keys.NumPad7) && player2Gold >= 75) // Hospital
+            if (Keyboard.HasBeenPressed(Keys.NumPad7) && player2Gold >= 75) // Hospital
             {
                 // place player2 hospital
             }
-            if (keyboard.IsKeyDown(Keys.NumPad8))
+            if (Keyboard.HasBeenPressed(Keys.NumPad8))
             {
                 // place player2 fishingboat
             }
-            if (keyboard.IsKeyDown(Keys.NumPad9))
+            if (Keyboard.HasBeenPressed(Keys.NumPad9))
             {
                 // place player2 ptboat
             }
