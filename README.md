@@ -1,4 +1,4 @@
-# UTOPIA (Still in Development!)
+# UTOPIA (Still in Development)
 
 ### Wikipedia: https://en.wikipedia.org/wiki/Utopia_(video_game)
 
