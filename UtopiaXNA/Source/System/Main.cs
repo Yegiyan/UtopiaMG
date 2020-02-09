@@ -26,7 +26,7 @@ namespace UtopiaMG
 	HOWTOENVIRONMENT3
 	}
 
-	public class Main : Game
+	public class Main : Game // Test
 	{
 		public static GameState state = GameState.STARTMENU;
 
