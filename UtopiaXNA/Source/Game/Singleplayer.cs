@@ -121,7 +121,6 @@ namespace UtopiaMG
 
         public void Update(GameTime gameTime)
         {
-            //KeyboardState keyboard = Keyboard.GetState();
             Keyboard.GetState();
 
             if (!isStart)
@@ -144,7 +143,7 @@ namespace UtopiaMG
             {
                 roundEndDing.Play();
                 Thread.Sleep(6000);
-                Main.state = GameState.STARTMENU; // CHANGE STATE TO ENDGAME WHEN WE'RE DONE
+                Main.state = GameState.STARTMENU; // TODO: Change state to ENDGAME when we're done!
                 return;
             }
 
@@ -200,53 +199,6 @@ namespace UtopiaMG
             if (Keyboard.HasBeenPressed(Keys.D9))
             {
                 // place player1 ptboat
-            }
-
-            // Player 2 Controls
-            if (Keyboard.IsPressed(Keys.Up))
-                player2Position.Y -= 4;
-            if (Keyboard.IsPressed(Keys.Left))
-                player2Position.X -= 4;
-            if (Keyboard.IsPressed(Keys.Down))
-                player2Position.Y += 4;
-            if (Keyboard.IsPressed(Keys.Right))
-                player2Position.X += 4;
-
-            if (Keyboard.HasBeenPressed(Keys.NumPad1) && player2Gold >= 3) // Grass
-            {
-                // place player2 grass
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad2) && player2Gold >= 30) // Rebel
-            {
-                // place player2 rebel
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad3) && player2Gold >= 35) // School
-            {
-                // place player2 school
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad4) && player2Gold >= 40) // Factory
-            {
-                // place player2 factory
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad5) && player2Gold >= 50) // Fort
-            {
-                // place player2 fort
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad6) && player2Gold >= 60) // School
-            {
-                // place player2 school
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad7) && player2Gold >= 75) // Hospital
-            {
-                // place player2 hospital
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad8))
-            {
-                // place player2 fishingboat
-            }
-            if (Keyboard.HasBeenPressed(Keys.NumPad9))
-            {
-                // place player2 ptboat
             }
         }
 
