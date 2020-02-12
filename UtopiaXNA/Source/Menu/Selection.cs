@@ -46,12 +46,12 @@ namespace UtopiaMG
 
         void SetTermOfOffice(float termOfOffice)
         {
-            this.termOfOffice = termOfOffice;
+            termOfOffice = this.termOfOffice;
         }
 
         void SetTermLength(float termLength)
         {
-            this.termLength = termLength;
+            termLength = this.termLength;
         }
 
         public float GetTermOfOffice()
@@ -123,7 +123,7 @@ namespace UtopiaMG
                 if (mouseState.LeftButton == ButtonState.Pressed && oldMouseState.LeftButton == ButtonState.Released)
                 {
                     buttonSound.Play();
-                    if (termOfOffice != 99) SetTermOfOffice(40);
+                    if (termOfOffice != 99) SetTermOfOffice(termOfOffice++);
                     return;
                 }
             }
