@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading;
 using System;
 
@@ -125,10 +124,10 @@ namespace UtopiaMG
 
             if (!isStart)
             {
-                Console.WriteLine("GET TERMOFOFFICE: (S) " + selectionMenu.getTermOfOffice());
-                Console.WriteLine("GET TERMLENGTH: (S) " + selectionMenu.getTermLength());
-                termOfOffice = selectionMenu.getTermOfOffice();
-                termLength = selectionMenu.getTermLength();
+                Console.WriteLine("GET TERMOFOFFICE: (S) " + selectionMenu.GetTermOfOffice());
+                Console.WriteLine("GET TERMLENGTH: (S) " + selectionMenu.GetTermLength());
+                termOfOffice = selectionMenu.GetTermOfOffice();
+                termLength = selectionMenu.GetTermLength();
                 isStart = true;
             }
 
@@ -137,7 +136,7 @@ namespace UtopiaMG
             {
                 roundEndDing.Play();
                 termOfOffice--;
-                termLength = selectionMenu.termLength;
+                termLength = selectionMenu.GetTermLength();
             }
             if (termOfOffice < 1)
             {
@@ -211,7 +210,7 @@ namespace UtopiaMG
 
             player1Island.Draw(batch, gameTime);
             player2Island.Draw(batch, gameTime);
-
+            
             mainUI.Draw(batch, gameTime);
 
             batch.DrawString(font, "TURN LENGTH: " + termLength.ToString("0"), new Vector2(660, 15), Color.White);

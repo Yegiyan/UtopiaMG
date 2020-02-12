@@ -41,25 +41,25 @@ namespace UtopiaMG
         Texture2D termLengthMinusTexture;
         Vector2 termLengthMinusPosition;
 
-        public float termOfOffice = 30; // Amount of rounds
-        public float termLength = 60;   // Round length in seconds
+        float termOfOffice = 30; // Amount of rounds
+        float termLength = 60;   // Round length in seconds
 
-        public void setTermOfOffice(float termOfOffice)
+        void SetTermOfOffice(float termOfOffice)
         {
             this.termOfOffice = termOfOffice;
         }
 
-        public void setTermLength(float termLength)
+        void SetTermLength(float termLength)
         {
             this.termLength = termLength;
         }
 
-        public float getTermOfOffice()
+        public float GetTermOfOffice()
         {
             return termOfOffice;
         }
 
-        public float getTermLength()
+        public float GetTermLength()
         {
             return termLength;
         }
@@ -98,11 +98,8 @@ namespace UtopiaMG
 
 		public void Update(GameTime gameTime)
 		{
-            Console.WriteLine("GET TERMOFOFFICE: " + getTermOfOffice());
-            Console.WriteLine("GET TERMLENGTH: " + getTermLength());
-            
-            //Console.WriteLine("TERM OF OFFICE: {0}", termOfOffice);
-            //Console.WriteLine("TERM LENGTH: {0}", termLength);
+            Console.WriteLine("GET TERMOFOFFICE: " + GetTermOfOffice());
+            Console.WriteLine("GET TERMLENGTH: " + GetTermLength());
 
             KeyboardState keyboard = Keyboard.GetState();
             oldMouseState = mouseState;
@@ -126,7 +123,7 @@ namespace UtopiaMG
                 if (mouseState.LeftButton == ButtonState.Pressed && oldMouseState.LeftButton == ButtonState.Released)
                 {
                     buttonSound.Play();
-                    if (termOfOffice != 99) termOfOffice++;
+                    if (termOfOffice != 99) SetTermOfOffice(40);
                     return;
                 }
             }
@@ -145,7 +142,7 @@ namespace UtopiaMG
                 if (mouseState.LeftButton == ButtonState.Pressed && oldMouseState.LeftButton == ButtonState.Released)
                 {
                     buttonSound.Play();
-                    if (termOfOffice != 5) termOfOffice--;
+                    if (termOfOffice != 5) SetTermOfOffice(termOfOffice--);
                     return;
                 }
             }
@@ -213,8 +210,8 @@ namespace UtopiaMG
 			}
             // ----------------------------------------------------------------------- \\ 
 
-            setTermOfOffice(termOfOffice);
-            setTermLength(termLength);
+            SetTermOfOffice(termOfOffice);
+            SetTermLength(termLength);
 		}
 
 		public void Draw(GameTime gameTime)
