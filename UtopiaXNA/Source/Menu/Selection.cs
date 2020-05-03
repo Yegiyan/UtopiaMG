@@ -44,9 +44,14 @@ namespace UtopiaMG
         float termOfOffice = 30; // Amount of rounds
         float termLength = 60;   // Round length in seconds
 
+        public Selection()
+        {
+            Console.WriteLine("Selection Menu Called!");
+        }
+
         void SetTermOfOffice(float termOfOffice)
         {
-            termOfOffice = this.termOfOffice;
+            this.termOfOffice = termOfOffice;
         }
 
         void SetTermLength(float termLength)

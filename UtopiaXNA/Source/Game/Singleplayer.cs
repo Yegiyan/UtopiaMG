@@ -51,8 +51,6 @@ namespace UtopiaMG
         int player2Census = 0;
         int player2Score = 0;
 
-        bool isStart = false;
-
         Player player1;
         Texture2D player1Texture;
         Vector2 player1Position;
@@ -64,6 +62,8 @@ namespace UtopiaMG
 
         // ---------- BUILDING OBJECTS ---------- \\
         Texture2D grassTexture;
+        Rectangle grassRectangle;
+
         Texture2D rebelTexture;
         Texture2D schoolTexture;
         Texture2D factoryTexture;
@@ -116,20 +116,14 @@ namespace UtopiaMG
             fortTexture = Content.Load<Texture2D>("Art/Buildings/fort");
             houseTexture = Content.Load<Texture2D>("Art/Buildings/house");
             hospitalTexture = Content.Load<Texture2D>("Art/Buildings/hospital");
+
+            termLength = selectionMenu.GetTermLength();
+            termOfOffice = selectionMenu.GetTermOfOffice();
         }
 
         public void Update(GameTime gameTime)
         {
-            Keyboard.GetState();
-
-            if (!isStart)
-            {
-                Console.WriteLine("GET TERMOFOFFICE: (S) " + selectionMenu.GetTermOfOffice());
-                Console.WriteLine("GET TERMLENGTH: (S) " + selectionMenu.GetTermLength());
-                termOfOffice = selectionMenu.GetTermOfOffice();
-                termLength = selectionMenu.GetTermLength();
-                isStart = true;
-            }
+            Keyboard.GetState();       
 
             termLength -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (termLength <= 0)
@@ -159,6 +153,7 @@ namespace UtopiaMG
             if (Keyboard.HasBeenPressed(Keys.D1) && player1Gold >= 3) // Grass
             {
                 buildings.Add(new Building(grassTexture, player1Position, 0));
+                grassRectangle = new Rectangle((int)player1Position.X, (int)player1Position.Y, grassTexture.Width, grassTexture.Height);
                 player1Gold -= 3;
             }
             if (Keyboard.HasBeenPressed(Keys.D2) && player1Gold >= 30) // Rebel
